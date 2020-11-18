@@ -1,0 +1,123 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background: url("assets/images/logo images/backgrounglogo.png") no-repeat top center fixed ,url("assets/images/logo images/foterlogo.png") fixed no-repeat center bottom;
+    background-size: 400px,300px,cover;
+background-color: black;
+overflow: auto;
+}
+
+.page{
+height: 100%;
+box-sizing: border-box;
+display: grid;
+grid-template-rows: 10% 75% 15%;
+grid-template-columns: repeat(12, 1fr);
+}
+
+
+ header, footer {
+   grid-column: span 12; 
+
+} 
+
+
+
+ main { 
+    grid-column: span 6;
+    padding: 15px;
+height: 100%;
+
+} 
+
+
+#right {
+    grid-column: 3 span;
+    padding: 15px;
+}
+
+#left{
+    grid-column: 3 span;
+    padding: 15px;   
+}
+
+/* logos */
+
+#pIndex{
+color: gray;
+font-weight: bolder;
+margin-top: 100px;
+font: x-large;
+font-style: italic;
+padding:0 20px;
+
+}
+
+/* our path*/
+main > section{
+  text-align: justify;
+    font-style: italic;
+    direction: rtl;
+    width:100%;
+   height:100%;
+   line-height:50px;
+color: gray;
+font-weight: bolder;
+padding:0 20px;
+
+}
+
+/* our store */
+.card-deck{
+    padding-right: 20px;
+}
+
+
+/*hat cards  */
+.cardHat{
+width: 360px;
+height: 450px;
+display: inline-block;
+background-color: white;
+}
+
+.card-text{
+    font: xx-small;
+    margin-top: -20px;
+}
+
+.card-title{
+    margin-top: -10px;
+}
+
+
+/* adidas store */
+h3{
+    text-decoration:underline ;
+    font-weight: bold;
+}
+
+
+@media only screen and (max-width: 1000px) {
+main{
+    padding: 0 0;
+    width: 230px;
+margin-left: -28px;
+}
+main > section{
+    line-height: 20px;
+
+}
+.cardHat{
+    width: 230px;
+height: 450px;
+margin-left: -36px;
+}
+#pIndex{
+    line-height: 30px;
+    margin-top: 250px;
+
+}
+}
